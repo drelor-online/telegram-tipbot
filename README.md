@@ -19,3 +19,9 @@ Available commands are:
 /updateusername -> To update your usename since only telegram users with an username can tip and receive rains
 
 ```
+
+Deployment:
+
+- Make sure that the bot is connected to a database by setting the url in the .env file.
+- Make sure to setup the bot token by settings its token in the .env file.
+- Run bot.js as a daemon. For example using forever.js
