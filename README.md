@@ -3,7 +3,8 @@ Telegram tipbot to distribute tokens.
 
 Create a .env file in the root directory to make it work.
 
-```DATABASE_URL=postgredatabaseurl
+```
+DATABASE_URL=postgredatabaseurl
 token=telegramtoken
 ```
 
