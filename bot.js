@@ -24,14 +24,14 @@ bot.command('help', (ctx) => {
 })
 
 
-bot.command('register', (ctx) => {
+bot.command('deposit', (ctx) => {
     let myId = ctx.update.message.from.id
     let myUsername = ctx.update.message.from.username
-    userCommon.registerUser(myId, myUsername).then(res => {
+    userCommon.depositUser(myId, myUsername).then(res => {
         if (res) {
-            ctx.reply("Welcome to Xtake.cash, your are now an xtaker!! 💲💲")
+            ctx.reply("Your reuseable deposit address is")
         } else {
-            ctx.reply("OOps😦!! There was an error registering the user. Maybe your user already exists 🤔? Check /balance")
+            ctx.reply("New user, your reuseable deposit address is")
         }
     })
 })
